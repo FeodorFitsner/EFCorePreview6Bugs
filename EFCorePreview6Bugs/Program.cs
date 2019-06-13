@@ -36,9 +36,9 @@ namespace EFCorePreview6Bugs
                 }
 
                 // tests
-                //FirstOrDefaultNotImplemented();
+                FirstOrDefaultNotImplemented();
                 //TheDataIsNull();
-                NoDataExistsForRowColumn();
+                //NoDataExistsForRowColumn();
             }
         }
 
