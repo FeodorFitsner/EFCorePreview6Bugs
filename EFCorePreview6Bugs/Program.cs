@@ -36,7 +36,7 @@ namespace EFCorePreview6Bugs
                 }
 
                 // tests
-                FirstOrDefaultNotImplemented();
+                //FirstOrDefaultNotImplemented();
                 //TheDataIsNull();
                 //NoDataExistsForRowColumn();
             }
@@ -74,7 +74,7 @@ namespace EFCorePreview6Bugs
             {
                 var projects = context.Projects
                     .Include(p => p.NuGetFeeds)
-                    .Include(p => p.Tags)
+                    //.Include(p => p.Tags)
                     .Include(p => p.AccessRights)
                     .ToList() // this is to workaround NIE with .FirstOrDefault()
                     .FirstOrDefault();
